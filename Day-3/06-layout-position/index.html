@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>TailwindCSS</title>
+  </head>
+  <body>
+    <!--*1) Positioning -->
+    <div class="relative h-12 w-1/2 bg-red-200">
+      <p>Parent Element</p>
+      <div class="absolute bottom-0 right-0 bg-red-500">
+        <p>Absolute Child</p>
+      </div>
+    </div>
+
+    <!--*2) Top left corner -->
+    <div class="relative h-32 w-32 bg-yellow-100">
+      <div class="absolute left-0 top-0 h-16 w-16 bg-yellow-300">
+
+      </div>
+    </div>
+
+    <!--*3) Top right corner -->
+    <div class="relative h-32 w-32 bg-yellow-100">
+      <div class="absolute right-0 top-0 h-16 w-16 bg-yellow-300">
+
+      </div>
+    </div>
+    <!--*4) Top left corner -->
+    <div class="relative h-32 w-32 bg-yellow-100">
+      <div class="absolute left-0 top-0 h-16 w-16 bg-yellow- 300">
+
+      </div>
+    </div>
+    <!--*5) Bottom right corner -->
+     <div class="relative h-32 w-32 bg-yellow-100">
+      <div class="absolute right-0 bottom-0 h-16 w-16 bg-yellow-300">
+      </div>
+    </div>
+
+    <!--*6) Span top edge -->
+    <div class="relative h-32 w-32 bg-yellow-100">
+      <div class="absolute top-0 inset-x-0 h-16 bg-yellow-300">
+      </div>
+    </div>
+
+    <!--*7) Span left edge -->
+    <div class="relative h-32 w-32 bg-yellow-100">
+      <div class="absolute left-0 inset-y-0 w-16 bg-yellow-300">
+      </div>
+    </div>
+
+    <!--*8) Span right edge -->
+    <div class="relative h-32 w-32 bg-yellow-100">
+      <div class="absolute right-0 inset-y-0 w-16 bg-yellow-300">
+      </div>
+    </div>
+
+    <!--*9) Span bottom edge -->
+    <div class="relative h-32 w-32 bg-yellow-100">
+      <div class="absolute bottom-0 inset-x-0 h-16 bg-yellow-300">
+      </div>
+    </div>
+
+    <!--*10) Display Classes -->
+    <!-- 
+      CLASSES ARE :
+      =>1)Block
+      =>2)Inline
+      =>3)Inline-Block
+      =>4)Hidden  
+    -->
+    <div>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum deleniti sed aut <span class="inline font-bold">This is inline</span> voluptate magnam optio provident unde ut! Cum excepturi vitae similique distinctio cumque unde. <span class="inline-block font-bold">This is inline block</span> Consequuntur at molestiae ratione officia totam. <span class="block font-bold">This is block</span>Doloribus qui veritatis facere aut possimus beatae est! Error, reiciendis.  <span class="hidden font-bold">Thi is hidden paragraph</span>Ad quis unde tempora placeat vero labore optio, obcaecati amet, expedita eum, ullam temporibus animi quaerat adipisci blanditiis illo.
+    </div>
+
+    <!--*11) Z-Index -->
+    <!-- 
+      =>z-index it refers to a placement of how far away from the screen or towards to the screen.  
+    -->
+      <div class="relative h-36">
+        <div class="absolute left-10 w-24 h-24 bg-blue-300 z-40">1</div>
+        <div class="absolute left-20 w-24 h-24 bg-blue-400">2</div>
+        <div class="absolute left-40 w-24 h-24 bg-blue-500 z-10">3</div>
+        <div class="absolute left-60 w-24 h-24 bg-blue-600 z-20">4</div>
+        <div class="absolute left-60 w-24 h-24 bg-blue-700 z-30">5</div>
+      </div>
+
+
+    <!--*12) Floats-->
+    <div class="w-1/2">
+      <img class="h-48 w-48 float-left m-2" src="../assets/img/img1.jpg"/>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam odit tenetur officiis ea laborum architecto maiores explicabo voluptate animi dicta excepturi dignissimos facilis tempore, harum suscipit eius eaque. Eligendi, expedita.
+      </p>
+    </div>
+  </body>
+</html>
+
+<!-- Position Classes
+      static	    position: static;
+      fixed	      position: fixed;
+      absolute	  position: absolute;
+      relative	  position: relative;
+      sticky	    position: sticky;
+    -->
+
+<!-- Display Classes
+      block	            display: block;
+      inline-block	    display: inline-block;
+      inline	          display: inline;
+      flex	            display: flex;
+      inline-flex	      display: inline-flex;
+      table	            display: table;
+      grid	            display: grid;
+      inline-grid	      display: inline-grid;
+      contents	        display: contents;
+      list-item	        display: list-item;
+      hidden	          display: none;
+    -->
+
+<!-- Z-Index
+      z-0	    z-index: 0;
+      z-10	  z-index: 10;
+      z-20	  z-index: 20;
+      z-30	  z-index: 30;
+      z-40	  z-index: 40;
+      z-50	  z-index: 50;
+      z-auto	z-index: auto;
+    -->
+
+<!-- Float
+      float-right	  float: right;
+      float-left	  float: left;
+      float-none	  float: none;
+    -->

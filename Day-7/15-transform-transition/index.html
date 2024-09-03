@@ -7,14 +7,13 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
-        theme: {
+        theme : {
           extend: {
             transitionDuration: {
-              0: '0ms',
-              2000: '2000ms',
-            },
-          },
-        },
+              2000: '2000s'
+            }
+          }
+        }
       }
     </script>
     <title>Transform & Transition</title>
@@ -28,25 +27,16 @@
     </button>
 
     <!-- Transition -->
-    <button
-      class="px-8 py-2 m-24 text-white bg-blue-500 rounded transition-colors duration-700 hover:bg-blue-700"
-    >
-      Click me
+    <button class="px-8 py-2 text-white bg-blue-500 rounded hover:bg-blue-700 hover:opacity-20 transition-colors duration-1000">
+      click me
     </button>
-
     <!-- Transition & Transform -->
-    <button
-      class="px-8 py-2 m-24 text-white bg-blue-500 rounded transition ease-in-out delay-150 duration-2000 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500"
-    >
+    <button class="px-8 py-2 m-24 text-white bg-blue-500 rounded hover:bg-blue-700 hover:rotate-12 transition-transform duration-1000">
       Click me
     </button>
 
+    <img src="../assets/img/img1.jpg" class="w-48 hover:rotate-180 hover:scale-75 hober:skew-x-12 transition duration-2000"/>
     <!-- Transform & Transition -->
-    <img
-      src="../assets/img/img1.jpg"
-      alt=""
-      class="hover:transform hover:rotate-180 hover:scale-75 hover:skew-x-12 transition"
-    />
   </body>
 </html>
 
